@@ -1,0 +1,89 @@
+<!DOCTYPE HTML>
+<head>
+	<meta http-equiv="Content-Type" content="text/html"; charset="utf-8">
+	<title>Color Table</title>
+	<style type="text/css">
+	* {
+		text-align: center;
+	}
+	div {
+		align-content: center;
+	}
+	/*--Мне почему-то не удалось центрировать таблицу. И почему-то некорректно отбражается свойство align-content, хотя я брала его в рекомендованном справочнике. В чем ошибка?--*/
+	span {
+		color: green;
+		outline: #00FF07 dotted thick;
+		outline-width: 3px;
+		outline-color: red;
+	}
+	th {
+			background-color: #ffcce6;
+			width: 120px;
+			height: 50px;
+	}
+	td {
+			width: 120px;
+			height: 40px;
+	}
+	.narrow {
+		width: 80px;
+	}
+	.orange {
+		background-color: orange;
+	}
+	.height {
+		height: 100px;
+	}
+	.bold {
+		font-weight: bold;
+		font-size: 200%;
+	}
+	.blue {
+		background-color: #80d5ff;
+	}
+	.green {
+		background-color: #9fff80;
+	}
+	</style>
+</head>
+<body>
+	<div>
+	<table>
+		<thead><h1>The <span id="ccc"> Color</span> Table</h1></thead>
+		<tbody>
+			<tr>
+				<th class="orange">CATS</th>
+				<th class="orange">DOGS</th>
+				<th>MONSTERS</th>
+				<th class="narrow">HUMANS</th>
+				<th class="narrow">BIRDS</th>
+			</tr>
+			<tr>
+				<td class="orange">700</td>
+				<td class="orange">315</td>
+				<td>17</td>
+				<td rowspan="3" class="blue">25</td>
+				<td>80</td>
+			</tr>
+			<tr>
+				<td class="orange" class="height">25</td>
+				<td class="orange" class="height">15</td>
+				<td class="height"><img src="img-01.jpg"></td>
+				<td class="bold" class="height">10</td>
+			</tr>
+			<tr>
+				<td class="orange">name</td>
+				<td class="green">house</td>
+				<td>name</td>
+				<td rowspan="2" class="orange">street</td>
+			</tr>
+			<tr>
+				<td class="blue">7000</td>
+				<td class="orange">7000</td>
+				<td colspan="2" class="green" class="bold">7000</td>
+                <!-- Здесь у меня задано два класса, но отображается только один, который стоит впереди, несколько раз меняла местами и проверяла синтаксис. Почему так?-->
+			</tr>
+		</tbody>
+	</table>
+	</div>
+</body>
